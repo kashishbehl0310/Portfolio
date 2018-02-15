@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pure CSS Responsive Navbar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Lato|Montserrat|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+      JoGeek
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a href="//github.io/jo_geek" target="_blank">Github</a>
+      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+      <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+    </div>
+  </div>
+
+  <div id="home">
+      <div class="cover"></div>
+      <h1 class="text-center" id="heading">Hi! I am Kashish Behl and I develop
+        <span
+           class="txt-rotate"
+           data-period="2000"
+           data-rotate='[ "web applications", "E Commerce portals", "coorprate websites", "user interfaces and experiences" ]'></span>.
+      </h1>
+      <div class="desc">
+        <h4 class="text-center" id="details">An Indian Front End Developer freelancing in Delhi.</h4>
+      </div>
+      <div class="learnbutton">
+        <a href="" class="learnMore">Available for hire</a>
+      </div>
+  </div>
+  <div class="container about">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <img class="avatar-img" src="images/myphoto.jpg" alt="">
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="description">
+            <p>Hi</p>
+            <p>I am a junior front end developer capable of developing and designing web applications from scratch. In a hustle to make a
+            successful career in front end development , I have worked on certain projects to gain expertise over my skills.
+            </p>
+            <p> Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</p>
+          </div>
+          <a class="site-btn" href="#" onclick="openTab(this)" name="Resume Kashish Behl.pdf">
+          <img src="images/img_btn_icon.png" alt="">
+            Download CV
+        </a>
+        </div>
+      </div>
+    </div>
+    <br>
+        <div class="skills container">
+      <h1>Skills</h1>
+    <div class="content">
+      <div class="development-wrapper row">
+        <p class="skill-para">When working on project I make use of my skillset to deliver exceptional results. This is how willI rate myself on the skills I utilize while working on real world projects.</p>
+        <!-- <h3 class="development-title">Development</h3> -->
+        <br>
+        <div class="skill-bar col-md-6">
+          <ul class="skills-bar-container">
+            <li>
+              <div class="progressbar-title">
+                <!-- <h3>HTML5</h3> -->
+                <span class="percent" id="html-pourcent"></span>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/skills/html5.png" alt="">
+                </div>
+
+              <!-- <span class="skill-img"></span> -->
+                <div class="col-md-10 bar-container" data-percent="95">
+                  <span class="progressbar" id="progress-html"></span>
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="progressbar-title">
+                <span class="percent" id="css-pourcent"></span>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="images/skills/css3.png" alt="">
+                </div>
+
+              <!-- <span class="skill-img"></span> -->
+                <div class="col-md-10 bar-container" data-percent="85">
+                  <span class="progressbar" id="progress-css"></span>
+                </div>
+              </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/javascript.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="80">
+                <span class="progressbar" id="progress-js"></span>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="php-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img style="margin-top: 5px;" src="images/skills/php.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="70">
+                <span class="progressbar" id="progress-php"></span>
+              </div>
+          </div>
+        </li>
+        <li style="margin-top: 30px;">
+          <div class="progressbar-title">
+            <span class="percent" id="php-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/sql.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="70">
+                <span class="progressbar" id="progress-sql"></span>
+              </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+      <div class="skill-bar skill-bar-2 col-md-6">
+      <ul class="skills-bar-container">
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="html-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/bootstrap.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="85">
+                <span class="progressbar" id="progress-bootstrap"></span>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="css-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/angular.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="65">
+                <span class="progressbar" id="progress-angular"></span>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/jquery.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="50">
+                <span class="progressbar" id="progress-jquery"></span>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/photoshop.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="50">
+                <span class="progressbar" id="progress-photoshop"></span>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="progressbar-title">
+            <span class="percent" id="javascript-pourcent"></span>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+              <img src="images/skills/github.png" alt="">
+            </div>
+
+              <!-- <span class="skill-img"></span> -->
+              <div class="col-md-10 bar-container" data-percent="60">
+                <span class="progressbar" id="progress-github"></span>
+              </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+<!-- <div class="portfolio">
+  <div class="portfolio-cover">
+    <h1 class="text-center">PORTFOLIO</h1>
+    <p class="text-center">Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development.
+      This process allows me to create great product with client goals in mind.</p>
+  </div>
+</div> -->
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script  src="js/index.js"></script>
+  </body>
+  </html>
